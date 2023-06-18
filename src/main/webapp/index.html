@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IN CLASS</title>
+</head>
+<body>
+    <h1>Params form</h1>
+    <form method="get" action="/Lesson31_Web/exm1">
+<!--Текстовые, пароли и им подобные input всегда отправляются на сервер
+Если для указанных input значения не вводились, то на сервер придёт пустая стока.-->
+        <input type="text" name="param1">
+        <input type="text" name="param2" value="Default value">
+        <input type="text" name="param2">
+<!-- input-ы типа checkbox и radio приходят только в том случае если они были выбраны на странице.
+Значение по умолчанию - on, его можно изменить в атрибуте value-->
+        <input type="checkbox" name="chBox1">
+        <input type="checkbox" name="chBox2" value="GOOD">
+        <input type="radio" name="radio1" checked value="vl">
+        <input type="radio" name="radio1">
+        <input type="submit">
+    </form>
+<!--http://localhost:8080/Lesson31_Web/            exm1                           ?param1=IT+CLASS&param2=Default+value&param2=Java+Web&chBox1=on&chBox2=on&radio1=on
+                                       обработчик клиентского запроса   -->
+</body>
+</html>

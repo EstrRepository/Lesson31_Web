@@ -1,0 +1,20 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<!--файл развёртывания приложения-->
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+<!--  для настройки развёртывания приложения TomCat-ом и указания дольнейших параметров работы
+нашего приложения в tomcat используется этот файл - web.xml - дискриптом развёртывания приложения в tomcat -->
+<!--  Тэг <welcome-file-list> позволяет указать стартовую страницу проекта
+По умолчанию стартовой страницей является index.html-->
+  <welcome-file-list>
+<!--    Если страница main.html не будет найдена, то следующей попыткой будет пытаться найти и открыть страницу start.html
+ и так дальше ... т.е. пишем по приоритету-->
+    <welcome-file>main.html</welcome-file>
+    <welcome-file>start.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+<!--    Делаем стартовым сервлет. Для этого укажем его url-->
+    <welcome-file>exm3</welcome-file>
+  </welcome-file-list>
+</web-app>
